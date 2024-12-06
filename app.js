@@ -3,7 +3,7 @@ const app = express()
 const port = 3000;
 const sql = require('sqlite3').verbose();
 
-const db = new sql.Database('userData.db', (err) => {
+const db = new sql.Database('data/userData.db', (err) => {
     if (err) {
         console.error(err.message);
     }
